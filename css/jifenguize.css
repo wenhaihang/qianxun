@@ -1,0 +1,50 @@
+.content{
+	width: 1000px;
+	margin: 0px auto;
+}
+.content .up{
+	width: 1000px;
+	margin: 20px auto;
+}
+.content .up dl{
+	margin: 45px 0px;
+}
+.content .up dl dt{
+	font-size: 16px;
+	margin: 9px 0px;
+}
+.content .up dl dd{
+	margin: 12px 0px;
+}
+.center table{
+	border-collapse:collapse; 
+	width: 1000px;
+	margin-bottom: 50px;
+}
+tr{
+	border: 1px solid black;
+}
+th{
+	line-height: 70px;
+	text-align: center;
+	background-color: #e4e7eb;
+}
+td{
+	line-height: 50px;
+	text-align: center;
+	background-color: #eff3f6;
+}
+.down table{
+	border-collapse:collapse; 
+	width: 500px;
+	margin: 20px 0px;
+}
+.down b{
+	font-size: 20px;
+}
+span{
+	display: inline-block;
+	margin: 20px 0px;
+	color: #aaa;
+	font-size: 12px;
+}

@@ -1,0 +1,473 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+body{
+	font-size: 14px;
+	color: #333;
+	font-family: '微软雅黑';
+	overflow: hidden;
+}
+html,body,section{
+	width: 100%;
+	height: 100%;
+}
+section>div{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+section{
+	position: relative;
+	top: 0px;
+}
+section>div .title{
+	position: absolute;
+	width: 100%;
+	bottom: 300px;
+	left: 0px;
+	text-align: center;
+}
+section>div .title span{
+	transition: 1s;
+}
+section>div .title span:nth-child(1){
+	background-image: url('../images/logo-text.png');
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	background-position: left center;
+}
+section>div .title img{
+	transition: 1s;
+}
+section>div .title p{
+	width: 300px;
+	color: #fff;
+	margin: 0px auto;
+	text-align: center;
+	transition: 1s;
+}
+section>div .no span:nth-child(1){
+	margin-right: -1300px;
+	transform: rotate(180deg);
+}
+section>div .no span:nth-child(2) img{
+	transform: rotate(180deg);
+}
+section>div .no p{
+	transform: scale(0,1);
+	opacity: 0.1;
+}
+.screen1{
+	background-image: url('../images/bg01.jpg');
+	background-size: 100% 100%;
+}
+.screen2{
+	background-image: url('../images/bg02.jpg');
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.screen3{
+	background-image: url('../images/bg03.jpg');
+	background-size: 100% 100%;
+}
+.screen4{
+	background-image: url('../images/bg04.jpg');
+	background-size: 100% 100%;
+}
+.screen5{
+	background-image: url('../images/bg05.jpg');
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.screen6{
+	background-image: url('../images/bg06.jpg');
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.screen7{
+	background-image: url('../images/bg07.jpg');
+	background-size: 100% 100%;
+}
+/* 固定部分 */
+.logo,.music,.down,.aside,.nav,.view-more{
+	position: fixed;
+}
+.logo{
+	top: 10px;
+	left: 10px;
+	width: 200px;
+}
+.music{
+	top: 10px;
+	right: 10px;
+	width: 50px;
+}
+.down{
+	left: 50%;
+	bottom: 200px;
+	margin-left: -153px
+}
+.view-more{
+	left: 50%;
+	bottom: 160px;
+	margin-left: -153px;
+	color: #fff;
+}
+.view-more ul li{
+	float: left;
+	border-right: 1px solid #fff;
+	padding-right: 5px;
+	margin-right: 5px;
+}
+.aside{
+	top: 50%;
+	margin-top: -107px;
+	right: 10px;
+}
+.aside ul li{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid orange;
+	margin: 10px;
+	cursor: pointer;
+}
+.aside ul li.current{
+	background-image: url('../images/side_bg.png');
+	background-size: 100% 100%;
+	width: 40px;
+	height: 40px;
+	border: none;
+	margin-left: 0px;
+	animation: circle linear 4s infinite;
+}
+.play{
+	animation: circle linear 5s infinite;
+}
+@keyframes circle{
+	0%{
+		transform: rotate(0deg)
+	}
+	100%{
+		transform: rotate(360deg)
+	}
+}
+.nav{
+	bottom: 0px;
+	width: 100%;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.nav ul{
+	width: 1000px;
+	margin: 0px auto;
+}
+.nav ul li a{
+	width: 200px;
+	float: left;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	transition: 1s;
+}
+.nav ul li:nth-child(1) a:hover{
+	background-color: skyblue;
+}
+.nav ul li:nth-child(2) a:hover{
+	background-color: orange;
+}
+.nav ul li:nth-child(3) a:hover{
+	background-color: purple;
+}
+.nav ul li:nth-child(4) a:hover{
+	background-color: pink;
+}
+.nav ul li:nth-child(5) a:hover{
+	background-color: red;
+}
+/* 固定部分 */
+.balloon{
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -75px;
+	animation: go linear 4s infinite;
+}
+@keyframes go{
+	0%{top: 180px;}
+	50%{top: 150px;}
+	100%{top: 180px;}
+}
+.cloud{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	animation: to linear 30s infinite;
+}
+@keyframes to{
+	0%{right: 30px;}
+	100%{right:1530px;}
+}
+.scloud{
+	position: absolute;
+	top: 150px;
+	right: 300px;
+	animation: ti linear 30s infinite;
+}
+@keyframes ti{
+	0%{right: 300px;}
+	100%{right:1530px;}
+}
+.fire-balloon{
+	position: absolute;
+	top: 50px;
+	right: 350px;
+	animation: ao linear 4s infinite;
+}
+@keyframes ao{
+	0%{top: 50px;}
+	50%{top: 30px;}
+	100%{top:50px;}
+}
+.compass{
+	position: relative;
+	background-image: url('../images/compass.png');
+	width: 205px;
+	height: 231px;
+	margin: 60px auto;
+}
+.compass-pointer{
+	position: absolute;
+	top: 36px;
+	left: 38px;
+	animation:fo linear 10s infinite;
+}
+@keyframes fo{
+	0%{transform: rotate(0deg)}
+	100%{transform: rotate(360deg)}
+}
+.conch{
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -100px;
+	animation:lo linear 5s infinite;
+}
+@keyframes lo{
+	0%{top:200px }
+	50%{top:170px}
+	100%{top:200px}
+}
+.paopao{
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	margin-left: -100px;
+	overflow: hidden;
+}
+.paopao .pao{
+	position: absolute;
+	bottom: -30px;
+	left: 10px;
+	animation: pao linear 5s infinite;
+}
+.paopao .pao01{
+	position: absolute;
+	bottom: -30px;
+	left: 90px;
+	animation: pao linear 6s infinite;
+}
+.paopao .pao02{
+	position: absolute;
+	bottom: -30px;
+	right: 16px;
+	animation: pao linear 4s infinite;
+}
+.paopao .pao03{
+	position: absolute;
+	bottom: -30px;
+	left: 28px;
+	animation: pao linear 11s infinite;
+}
+.paopao .pao04{
+	position: absolute;
+	bottom: -30px;
+	left: 57px;
+	animation: pao linear 9s infinite;
+}
+.paopao .pao05{
+	position: absolute;
+	bottom: -30px;
+	left: 131px;
+	animation: pao linear 8s infinite;
+}
+.paopao .pao07{
+	position: absolute;
+	bottom: -30px;
+	left: 57px;
+	animation: pao linear 6s infinite;
+}
+.paopao .pao08{
+	position: absolute;
+	bottom: -30px;
+	left: 166px;
+	animation: pao linear 7s infinite;
+}
+.paopao .pao09{
+	position: absolute;
+	bottom: -30px;
+	left: 123px;
+	animation: pao linear 15s infinite;
+}
+.paopao .pao10{
+	position: absolute;
+	bottom:-30px;
+	left: 166px;
+	animation: pao linear 20s infinite;
+}
+.paopao .pao11{
+	position: absolute;
+	bottom:-30px;
+	left: 91px;
+	animation: pao linear 16s infinite;
+}
+.paopao .pao12{
+	position: absolute;
+	bottom: -30px;
+	left: 134px;
+	animation: pao linear 10s infinite;
+}
+@keyframes pao{
+	0%{bottom:-30px;}
+	100%{bottom: 280px;}
+}
+.ballon04{
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -100px;
+	transform-origin: center bottom;
+	animation:  ko linear 10s infinite;
+}
+@keyframes ko{
+	0%{transform: rotate(30deg)}
+	50%{transform: rotate(-30deg)}
+	100%{transform: rotate(30deg)}
+}
+.pic02{
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -100px;
+	animation: do linear 1s infinite;
+}
+@keyframes do{
+	0%{transform:scale(1)}
+	100%{transform:scale(3)}
+}
+.fire-balloon02{
+	position: absolute;
+	right: 290px;
+	bottom: 195px;
+	animation: zo linear 5s infinite;
+}
+@keyframes zo{
+	0%{bottom: 195px}
+	50%{bottom: 230px}
+	100%{bottom: 195px}
+}
+.fire-balloon03{
+	position: absolute;
+	right: 450px;
+	bottom: 100px;
+	animation: xo linear 6s infinite;
+}
+@keyframes xo{
+	0%{bottom: 100px}
+	50%{bottom: 150px}
+	100%{bottom: 100px}
+}
+.aircraft{
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -110px;
+	animation:  co linear 10s infinite;
+}
+@keyframes co{
+	0%{top:180px}
+	50%{top:250px;}
+	100%{top:180px;}
+}
+.screen06_bg{
+	position: absolute;
+	top: -1360px;
+	left: 0px;
+	animation: ci linear 100s infinite;
+}
+@keyframes ci{
+	0%{top:-1360px}
+	100%{top:800px;}
+}
+.black-hole-light{
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	margin-left: -155px;
+	animation:  vo linear 5s infinite;
+}
+@keyframes vo{
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(360deg)}
+}
+.dot01{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	animation: dot1 linear 3s infinite;
+}
+@keyframes dot1{
+	0%{transform: translate(0px, 0px)}
+	100%{transform: translate(850px, 250px)}
+}
+.dot02{
+	position: absolute;
+	top: 0px;
+	right:0px;
+	animation: dot2 linear 3s infinite;
+}
+@keyframes dot2{
+	0%{transform: translate(0px, 0px)}
+	100%{transform: translate(-850px,250px)}
+}
+.dot03{
+	position: absolute;
+	bottom:0px;
+	left: 0px;
+	animation: dot3 linear 3s infinite;
+}
+@keyframes dot3{
+	0%{transform: translate(0px, 0px)}
+	100%{transform: translate(850px,-550px)}
+}
+.dot04{
+	position: absolute;
+	bottom: 0px;
+	right:0px;
+	animation: dot4 linear 3s infinite;
+}
+@keyframes dot4{
+	0%{transform: translate(0px, 0px)}
+	100%{transform: translate(-850px,-550px)}
+}

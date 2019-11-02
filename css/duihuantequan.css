@@ -1,0 +1,78 @@
+.banner .left .qiandao1{
+	background-color:#3285fa;
+	box-shadow: 0px 20px 18px -6px rgba(50, 133, 250,0.5);
+}
+.content .up{
+	width: 1000px;
+	height: 340px;
+	margin: 10px auto;
+	border: 1px solid #ccc;
+	box-shadow:0px 3px 12px 3px rgba(0, 0, 0, 0.4);;
+}
+.content .up .up-up{
+	height: 40px;
+}
+.content .up .up-a{
+	float: right;
+	line-height: 39px;
+	margin-right: 20px;
+	color: #aaa;
+}
+.content .up .up-left{
+	float: left;
+	margin: 20px 100px;
+	width: 260px;
+	height: 256px;
+}
+.content .up .up-left .pptv{
+	width: 254px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+}
+.content .up .up-left .pptv_bg{
+	margin-top: 20px;
+}
+.content .up .up-left .pptv b{
+	position: absolute;
+}
+.content .up .up-right{
+	float: right;
+	width: 460px;
+	height: 240px;
+	border-left: 1px solid #ddd;
+	padding: 20px;
+}
+.content .up .up-right .up-tian{
+	display: inline-block;
+	width: 200px;
+	height: 276px;
+	background-image: url('../images/prize.png');
+	position: relative;
+}
+.content .up .up-right .up-tian img{
+	position: absolute;
+	top: 0px;
+	left: 20px;
+}
+.content .up .up-right .up-yue{
+	display: inline-block;
+	width: 200px;
+	height: 276px;
+	background-image: url('../images/prize.png');
+	position: relative;
+}
+.content .up .up-right .up-yue img{
+	position: absolute;
+	top: 0px;
+	left: 20px;
+}
+.content .up .up-right span{
+	position: absolute;
+	top: 178px;
+	left: 20px;
+}
+.content .up .up-left .iqy_bg{
+	margin-top: 20px;
+	margin-left: 120px;
+}
